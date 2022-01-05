@@ -1,13 +1,1 @@
-{
-    "name": "nft9",
-    "mint_const": 76.98724783412149,
-    "date": 1570107417,
-    "tags": [
-        "cute",
-        "scary"
-    ],
-    "num_squares": 1,
-    "colors": [
-        "orange"
-    ]
-}
+{"name": "nft9", "mint_cost": 96.77249074081271, "date": 1559746121, "tags": ["funny", "scary"], "num_squares": 2, "colors": ["red", "blue"]}

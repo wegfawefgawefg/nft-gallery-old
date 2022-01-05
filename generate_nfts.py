@@ -15,16 +15,18 @@
 import os
 import json
 import random
+import datetime
 from PIL import Image, ImageDraw, ImageFont
 IMAGE_WIDTH = 250
 IMAGE_HEIGHT = 250
 
 def make_nft(name):
-
-    mint_const = random.random() * 100
+    mint_cost = random.random() * 100
     # random date between 1/1/2019 and 1/1/2020
-    date = random.randint(1546300800, 1577836800)
-    tags = random.sample(["cool", "funny", "cute", "scary"], k=random.randint(1, 4))
+    date = random.randint(
+        int(datetime.datetime(2019, 1, 1).timestamp()), 
+        int(datetime.datetime(2020, 1, 1).timestamp()))        
+    tags = random.sample(["cool", "funny", "cute", "scary"], k=random.randint(1, 2))
     img = Image.new('RGB', (IMAGE_WIDTH, IMAGE_WIDTH), (0, 0, 0))
     draw = ImageDraw.Draw(img)
     num_squares = random.randint(1, 4)
@@ -43,7 +45,7 @@ def make_nft(name):
     with open(f"assets/{name}.json", "w") as f:
         info = {
             "name": name,
-            "mint_const": mint_const,
+            "mint_cost": mint_cost,
             "date": date,
             "tags": tags,
             "num_squares": num_squares,
@@ -55,5 +57,5 @@ if __name__ == "__main__":
     #  make asset folder if not exists
     if not os.path.exists("assets"):
         os.makedirs("assets")
-    for i in range(1, 10):
+    for i in range(10):
         make_nft(f"nft{i}")
