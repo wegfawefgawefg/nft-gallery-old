@@ -1,0 +1,16 @@
+{
+    "name": "nft8",
+    "mint_const": 63.31423165456926,
+    "date": 1575193742,
+    "tags": [
+        "scary",
+        "funny",
+        "cool"
+    ],
+    "num_squares": 3,
+    "colors": [
+        "purple",
+        "green",
+        "red"
+    ]
+}
