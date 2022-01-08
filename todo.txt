@@ -1,13 +1,10 @@
 -add react module
 
--make fake images
--make fake jsons
-    -color
-    -date made
-    -mint cost
-    -tags {"cool", "funny", "cute", "scary"}
 -load up db with fake data
 
 -make gallery
 -make gallery fetch only images that meet the search criteria
 
+'''
+dont forget to make users with perms when you make the db api
+'''

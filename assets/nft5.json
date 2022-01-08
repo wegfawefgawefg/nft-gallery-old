@@ -1,13 +1,1 @@
-{
-    "name": "nft5",
-    "mint_cost": 40.06390590991976,
-    "date": 1560882914,
-    "tags": [
-        "funny",
-        "scary"
-    ],
-    "num_squares": 1,
-    "colors": [
-        "yellow"
-    ]
-}
+{"name": "nft5", "mint_cost": 58.43091507112893, "date": 1577032927, "tags": ["cool"], "num_squares": 1, "colors": ["purple"]}
